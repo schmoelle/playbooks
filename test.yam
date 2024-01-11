@@ -1,0 +1,10 @@
+- hosts: all
+  collections:
+    - arubanetworks.aoscx
+  gather_facts: False
+  tasks:
+    - name: Interface Down
+      aoscx_interface:
+        name: "1/1/14"
+        enabled: true
+
